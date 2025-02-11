@@ -3,17 +3,17 @@
     <div class="wrapper">
       <h2>Work Experience</h2>
       <aside>
-        <h3>UI/UX Analyst - bet365</h3>
+        <h3>UI/UX Analyst</h3>
         <h4>2022 to present</h4>
         <p>Collaborating closely with designers, developers, and analysts to enhance user experience and implement new product features while maintaining brand consistency. Conducted detailed design analyses, created prototypes, and documented visual guidelines to ensure alignment with business and user needs. Performed cross-device and browser testing, logged design issues in JIRA, and followed up on resolutions to maintain high-quality standards. Delivered optimized assets and supported front-end developers by providing clear visual requirements and conducting design QA throughout the development process.</p>
       </aside>
       <aside>
-        <h3>Operations Support Assistant - bet365</h3>
+        <h3>Operations Support Assistant</h3>
         <h4>2017 to 2022</h4>
         <p>Reviewing account activity, customer correspondence, and translations to complete detailed audit checklists of operational processes. Investigating anomalies on reports that may indicate potential compliance breaches. Conducting website checks across all bet365 domains. Identifying and escalating any instances of non-compliance with regulatory and licensing conditions, as well as any internal process errors.</p>
       </aside>
       <aside>
-        <h3>Customer Accounts Advisor - bet365</h3>
+        <h3>Customer Accounts Advisor</h3>
         <h4>2016 to 2017</h4>
         <p>Customer accounts advisor dealing with a wide range of customer account queries. Daily duties include correctly advising customers on settlements of bets, balance histories, and login problems. Main duties include accurately guiding and educating customers with their queries while strictly complying with bet365 policy and procedures.</p>
       </aside>
