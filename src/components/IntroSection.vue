@@ -2,7 +2,7 @@
   <section class="intro" id="home">
     <div class="wrapper">
       <aside>
-        <h1>Hi, I'm John, <br>a UI/UX Analyst.</h1>
+        <h1>Hi, I'm John, <br>a UI Developer.</h1>
         <div class="intro-social">
           <a href="http://www.instagram.com/johnnyyungy" target="_blank">Instagram</a> /
           <a href="https://twitter.com/johnnyyungy" target="_blank">Twitter</a> /

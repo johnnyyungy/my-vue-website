@@ -5,6 +5,7 @@
     <AboutMe />
     <QuoteSection />
     <WorkExperience />
+    <ProjectsSection />
     <EducationSection />
     <InterestsSection />
     <AppFooter />
@@ -17,6 +18,7 @@ import IntroSection from './components/IntroSection.vue';
 import AboutMe from './components/AboutMe.vue';
 import QuoteSection from './components/QuoteSection.vue';
 import WorkExperience from './components/WorkExperience.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
 import EducationSection from './components/EducationSection.vue';
 import InterestsSection from './components/InterestsSection.vue';
 import AppFooter from './components/AppFooter.vue';
@@ -29,6 +31,7 @@ export default {
     AboutMe,
     QuoteSection,
     WorkExperience,
+    ProjectsSection,
     EducationSection,
     InterestsSection,
     AppFooter,

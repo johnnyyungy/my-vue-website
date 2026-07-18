@@ -23,6 +23,7 @@
       <a href="#home">Home</a>
       <a href="#aboutme">My Background</a>
       <a href="#work">Work Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#interests">Outside Interests</a>
     </nav>

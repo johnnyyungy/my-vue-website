@@ -3,21 +3,21 @@
     <div class="wrapper">
       <div class="me">
         <h2>My Background</h2>
-        <p>I have worked in the industry for almost nine years, starting in Customer Services and progressing to Design & UX.</p>
-        <p>As a UI/UX Analyst, I am responsible for documenting design specifications and visually testing enhancements to ensure the delivery of intuitive, user-focused solutions.</p>
-        <p>Working closely with a talented team of designers, developers, and analysts, I conduct detailed design analyses, create HTML/CSS and iOS prototypes, and produce optimized assets using tools like Adobe Photoshop, Illustrator, and Sketch. I ensure design quality by performing thorough QA testing, logging issues, and collaborating with developers to resolve them. Additionally, I participate in cross-device and browser testing, document visual guidelines, and present specifications to stakeholders to maintain high standards for user interface and experience.</p>
+        <p>I have worked in the industry for almost ten years, starting in Customer Services and progressing through Design &amp; UX into front-end development.</p>
+        <p>As a UI Developer, I build production user interfaces across web, iOS, and Android — most recently as part of the team that launched the native Follow Scores app on both platforms — working closely with designers, developers, and analysts to ship new product features.</p>
+        <p>Before moving into development I spent three years as a UI/UX Analyst — documenting design specifications, creating HTML/CSS and iOS prototypes, producing optimized assets in Photoshop, Illustrator, and Sketch, and conducting design QA and cross-device testing. That grounding in how users actually experience an interface still shapes how I build them.</p>
+        <p>Outside of work I develop iOS apps in Swift and SwiftUI. My current project, Chi, is a health &amp; fitness app for iPhone and Apple Watch that scores sleep, recovery, and training strain entirely on-device.</p>
       </div>
       <aside>
         <h2>Skills</h2>
         <ul>
-          <li>Communication</li>
-          <li>Critical thinking</li>
-          <li>Attention to detail</li>
-          <li>Adaptable</li>
-          <li>Hard working</li>
-          <li>Quick learner</li>
-          <li>Teamwork</li>
-          <li>Positive attitude</li>
+          <li>Swift &amp; SwiftUI</li>
+          <li>HealthKit, watchOS &amp; WidgetKit</li>
+          <li>HTML5, CSS3 &amp; JavaScript</li>
+          <li>Vue.js</li>
+          <li>Sketch, Photoshop &amp; Illustrator</li>
+          <li>Design QA &amp; cross-device testing</li>
+          <li>Git &amp; JIRA</li>
         </ul>
       </aside>
     </div>
