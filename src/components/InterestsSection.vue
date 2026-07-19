@@ -7,7 +7,7 @@
         <p>For fitness, I train Olympic weightlifting and CrossFit. I practice Mixed Martial Arts, in particular Muay Thai and Brazilian Jiu-Jitsu.</p>
         <p>I like to collect limited edition action figures, such as Transformers and Power Rangers.</p>
         <p>I am also interested in photography and videography. I combine my interests by taking photos on my travels and making videos for my YouTube cooking channel, <a href="https://www.youtube.com/channel/UCZhsbHXGqVWHivekOiC9ofQ" target="_blank">Hello! Taste</a>.</p>
-        <p>I also have a fitness blog that is built in WordPress: <a href="http://www.trainsmartnothard.com/" target="_blank">www.trainsmartnothard.com</a></p>
+        <p>I also have a fitness blog that I designed and hand-coded myself: <a href="https://trainsmartnothard.com/" target="_blank">www.trainsmartnothard.com</a></p>
       </div>
       <div class="photo">
         <div class="slideshow-container">
