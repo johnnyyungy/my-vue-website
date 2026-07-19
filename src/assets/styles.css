@@ -219,6 +219,23 @@
   .workexperience .more_jobs aside:last-of-type {
 	border-bottom: none;
   }
+
+  /* Projects: dark band so section backgrounds keep alternating (Work
+     Experience above is yellow, Education below is white). */
+  #projects {
+	background-color: var(--secondary-color);
+  }
+
+  #projects h2,
+  #projects h3,
+  #projects h4,
+  #projects p {
+	color: #f2f2f2;
+  }
+
+  #projects aside {
+	border-bottom-color: #f2f2f2;
+  }
   
   .more_button {
 	padding: 10px;
