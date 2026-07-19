@@ -211,6 +211,14 @@
 	margin: 0px 0px 30px;
 	padding: 0px 0px 10px;
   }
+
+  /* No trailing divider under the last entry of a section (covers Work
+     Experience, the expanded extra jobs and the Projects section, which
+     reuses these styles). */
+  .workexperience .wrapper > aside:last-of-type,
+  .workexperience .more_jobs aside:last-of-type {
+	border-bottom: none;
+  }
   
   .more_button {
 	padding: 10px;
