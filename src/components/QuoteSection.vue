@@ -2,7 +2,7 @@
   <section class="quote">
     <div class="wrapper">
       <p>"I am always open and eager to learn new things, which I believe is vital given the ever-changing nature of the technology industry.</p>
-      <p>In my free time I build iOS apps with Swift and SwiftUI — most recently Chi, a health &amp; fitness app for iPhone and Apple Watch."</p>
+      <p>In my free time I build iOS apps with Swift and SwiftUI, most recently Chi, a health &amp; fitness app for iPhone and Apple Watch."</p>
     </div>
   </section>
 </template>

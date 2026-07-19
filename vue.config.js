@@ -1,3 +1,5 @@
+// Site is served at the custom domain root (johnyung.dev), not the old
+// /my-vue-website/ project path.
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/my-vue-website/' : '/',
+  publicPath: '/',
 };
