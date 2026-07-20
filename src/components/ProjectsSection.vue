@@ -9,8 +9,15 @@
       <article class="case">
         <div class="case-copy">
           <h3><span class="mark">氣</span> Chi</h3>
-          <p class="meta">2026 &mdash; present &middot; Swift, SwiftUI, HealthKit, watchOS, WidgetKit</p>
+          <p class="meta">2026 &mdash; present</p>
           <p>A Whoop-style wellness app that computes Strain, Recovery and Sleep entirely on-device from Apple Watch data, scored against personalised trailing baselines rather than population norms. The watchOS companion mirrors the iPhone's scores live, with a watch-face complication for an at-a-glance read. The scoring is calibration-checked against outside references: the sleep model tracks Apple's own Sleep Score within a couple of points, and Strain is validated against the Banister TRIMP model from sports-science literature.</p>
+          <div class="case-tags">
+            <span class="tag">Swift</span>
+            <span class="tag">SwiftUI</span>
+            <span class="tag">HealthKit</span>
+            <span class="tag">watchOS</span>
+            <span class="tag">WidgetKit</span>
+          </div>
           <div class="vitals">
             <div>
               <span class="vital-value">10.9</span>
@@ -39,7 +46,7 @@
       <article class="case reverse">
         <div class="case-copy">
           <h3>Collectors Catalogue</h3>
-          <p class="meta">Personal project &middot; SwiftData, CloudKit</p>
+          <p class="meta">Personal project</p>
           <p>Catalogue and browse a collection with barcode scanning and photos. Taken through the full release process to Ready for Distribution on App Store Connect.</p>
           <div class="case-tags">
             <span class="tag">SwiftData</span>
@@ -56,7 +63,7 @@
       <article class="case">
         <div class="case-copy">
           <h3>Todaloo</h3>
-          <p class="meta">Personal project &middot; MapKit, Supabase</p>
+          <p class="meta">Personal project</p>
           <p>Finds nearby public toilets and plots them on a map when you need one most, backed by a live dataset of real facilities.</p>
           <div class="case-tags">
             <span class="tag">MapKit</span>
@@ -73,7 +80,7 @@
       <article class="case reverse">
         <div class="case-copy">
           <h3>Step Pet</h3>
-          <p class="meta">Personal project &middot; watchOS, WidgetKit</p>
+          <p class="meta">Personal project</p>
           <p>A watch-only app that gamifies daily walking: your steps feed a virtual pet living right on your wrist, with its own WidgetKit complication.</p>
           <div class="case-tags">
             <span class="tag">watchOS</span>
