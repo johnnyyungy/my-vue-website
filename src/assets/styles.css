@@ -125,6 +125,7 @@
 	background-color: var(--background-color);
 	min-height: 400px;
 	display: flex;
+	padding-bottom: 20px;
   }
   
   .intro .wrapper {
