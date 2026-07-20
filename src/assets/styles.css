@@ -299,25 +299,6 @@
 	color: var(--text-dim);
   }
 
-  .vitals {
-	display: flex;
-	gap: 26px;
-	margin-top: 22px;
-	flex-wrap: wrap;
-  }
-
-  .vital-value {
-	font-size: 1.4rem;
-	font-weight: 700;
-	color: var(--text-color);
-	display: block;
-  }
-
-  .vital-name {
-	font-size: 0.78rem;
-	color: var(--text-faint);
-  }
-
   .case-shot {
 	display: flex;
 	align-items: center;

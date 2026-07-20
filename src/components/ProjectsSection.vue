@@ -18,20 +18,6 @@
             <span class="tag">watchOS</span>
             <span class="tag">WidgetKit</span>
           </div>
-          <div class="vitals">
-            <div>
-              <span class="vital-value">10.9</span>
-              <span class="vital-name">Strain</span>
-            </div>
-            <div>
-              <span class="vital-value">86%</span>
-              <span class="vital-name">Recovery</span>
-            </div>
-            <div>
-              <span class="vital-value">88%</span>
-              <span class="vital-name">Sleep</span>
-            </div>
-          </div>
         </div>
         <div class="case-shot">
           <div class="device-phone">
