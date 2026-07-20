@@ -1,21 +1,25 @@
 /* Global Styles */
 :root {
-	--primary-color: #FFD817;
-	--secondary-color: #333;
-	--text-color: #000;
+	--primary-color: #1c7a45;
+	--secondary-color: #f5f5f7;
+	--text-color: #1d1d1f;
+	--text-dim: #6e6e73;
+	--text-faint: #a1a1a6;
 	--background-color: #fff;
+	--line: rgba(0, 0, 0, 0.1);
   }
-  
+
   * {
 	box-sizing: border-box;
   }
-  
+
   body {
 	padding: 38px 0px 100px 0px;
 	margin: 0px;
-	font-family: helvetica, arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	background-color: var(--primary-color);
+	background-color: var(--background-color);
+	color: var(--text-color);
   }
   
   p {
@@ -61,55 +65,57 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: black;
+	background-color: var(--background-color);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	height: 38px;
 	box-sizing: border-box;
   }
-  
+
   div.toggle button {
 	padding: 9px 10px;
 	background-color: transparent;
 	border: none;
   }
-  
+
   div.toggle button:hover {
 	cursor: pointer;
   }
-  
+
   div.toggle svg path {
-	fill: white;
+	fill: var(--text-color);
   }
-  
+
   div.toggle button:hover svg path {
 	fill: var(--primary-color);
   }
-  
+
   nav {
 	text-align: left;
 	position: fixed;
 	top: 38px;
 	width: 100%;
-	background-color: #000;
+	background-color: var(--background-color);
 	display: none;
 	padding: 0px 0px 10px 0px;
-	border-top: 1px solid #333;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
-  
+
   nav a {
 	padding: 0px 10px;
 	display: inline-block;
 	width: 100%;
-	color: white;
+	color: var(--text-color);
 	font-size: 14px;
 	text-decoration: none;
 	line-height: 38px;
   }
-  
+
   nav a:hover {
 	color: var(--primary-color);
-	background-color: #222;
+	background-color: var(--secondary-color);
   }
-  
+
   nav.showNav {
 	display: block;
   }
@@ -153,17 +159,18 @@
   
   .email {
 	background-color: var(--primary-color);
-	color: var(--text-color);
+	color: #fff;
 	display: inline-block;
-	padding: 10px;
+	padding: 10px 16px;
+	border-radius: 4px;
 	text-decoration: none;
 	font-size: 18px;
 	margin-bottom: 30px;
 	font-weight: bold;
   }
-  
+
   .email:hover {
-	background-color: #FFDF43;
+	background-color: #15613a;
   }
   
   /* About Me Section */
@@ -193,7 +200,7 @@
 	line-height: 1.5;
 	font-weight: bold;
 	font-style: italic;
-	color: white;
+	color: var(--text-color);
   }
   
   .quote .wrapper {
@@ -213,42 +220,194 @@
   }
 
   /* No trailing divider under the last entry of a section (covers Work
-     Experience, the expanded extra jobs and the Projects section, which
-     reuses these styles). */
+     Experience and the expanded extra jobs; Projects has its own
+     dedicated case-study styling further down). */
   .workexperience .wrapper > aside:last-of-type,
   .workexperience .more_jobs aside:last-of-type {
 	border-bottom: none;
   }
 
-  /* Projects: dark band so section backgrounds keep alternating (Work
-     Experience above is yellow, Education below is white). */
+  /* Projects: case-study rows, one big real screenshot each, matching
+     the presentation from the portfolio-redesign-v3 branch. */
   #projects {
 	background-color: var(--secondary-color);
   }
 
   #projects h2,
   #projects h3,
-  #projects h4,
   #projects p {
-	color: #f2f2f2;
+	color: var(--text-color);
   }
 
-  #projects aside {
-	border-bottom-color: #f2f2f2;
+  #projects .section-head {
+	max-width: 620px;
+	margin-bottom: 48px;
   }
-  
+
+  #projects .section-head p {
+	font-size: 1.05rem;
+  }
+
+  .case {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	padding: 48px 0;
+	border-bottom: 1px solid var(--line);
+  }
+
+  .case:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+  }
+
+  .case-copy h3 {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	margin-bottom: 8px;
+  }
+
+  .case-copy h3 .mark {
+	color: var(--primary-color);
+  }
+
+  .case-copy .meta {
+	font-size: 0.85rem;
+	color: var(--text-faint);
+	margin-bottom: 16px;
+  }
+
+  .case-copy p {
+	font-size: 1rem;
+  }
+
+  .case-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 16px;
+  }
+
+  .tag {
+	font-size: 0.78rem;
+	font-weight: 500;
+	padding: 5px 11px;
+	border-radius: 6px;
+	background: #fff;
+	color: var(--text-dim);
+  }
+
+  .vitals {
+	display: flex;
+	gap: 26px;
+	margin-top: 22px;
+	flex-wrap: wrap;
+  }
+
+  .vital-value {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--text-color);
+	display: block;
+  }
+
+  .vital-name {
+	font-size: 0.78rem;
+	color: var(--text-faint);
+  }
+
+  .case-shot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+  }
+
+  .device-phone {
+	width: 200px;
+	border-radius: 32px;
+	background: #000;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 3px;
+	box-shadow: 0 22px 54px -22px rgba(0, 0, 0, 0.35);
+	flex-shrink: 0;
+  }
+
+  .device-phone .screen {
+	position: relative;
+	border-radius: 29px;
+	overflow: hidden;
+	background: #000;
+  }
+
+  .device-phone .screen img {
+	display: block;
+	width: 100%;
+  }
+
+  .device-phone .notch {
+	position: absolute;
+	top: 7px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 32%;
+	height: 14px;
+	background: #000;
+	border-radius: 9px;
+	z-index: 2;
+  }
+
+  .device-watch {
+	width: 150px;
+	border-radius: 36px;
+	background: #000;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 4px;
+	box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.3);
+	flex-shrink: 0;
+  }
+
+  /* Smaller companion size for when a watch shot sits alongside a phone
+     shot in the same row, so it reads as secondary rather than competing. */
+  .device-watch.paired {
+	width: 108px;
+	border-radius: 27px;
+  }
+
+  .device-watch .screen {
+	border-radius: 32px;
+	overflow: hidden;
+  }
+
+  .device-watch.paired .screen {
+	border-radius: 23px;
+  }
+
+  .device-watch .screen img {
+	width: 100%;
+	display: block;
+  }
+
   .more_button {
-	padding: 10px;
-	background-color: var(--secondary-color);
-	width: 60px;
-	font-size: 12px;
-	color: white;
+	display: inline-block;
+	padding: 10px 18px;
+	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 999px;
+	width: fit-content;
+	white-space: nowrap;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--text-color);
 	text-align: center;
 	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
   }
-  
+
   .more_button:hover {
-	background-color: #222;
+	background-color: var(--secondary-color);
+	border-color: rgba(0, 0, 0, 0.3);
   }
   
   .more_jobs {
@@ -340,7 +499,7 @@
 	width: 100%;
 	padding: 10px;
 	background-color: var(--secondary-color);
-	color: white;
+	color: var(--text-dim);
   }
   
   /* Slideshow Container */
@@ -366,7 +525,11 @@
 	user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Position the arrows on opposite sides. */
+  .prev {
+	left: 0;
+  }
+
   .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
@@ -489,9 +652,28 @@
 	.interests .wrapper {
 	  flex-direction: row;
 	}
-  
+
 	.interests .photo {
 	  margin-left: 30px;
 	  max-width: 45%;
+	}
+
+	/* Projects Section: alternating side-by-side case-study rows. */
+	.case {
+	  flex-direction: row;
+	  align-items: center;
+	  gap: 60px;
+	}
+
+	.case-copy {
+	  flex: 1;
+	}
+
+	.case-shot {
+	  flex: 1;
+	}
+
+	.case.reverse {
+	  flex-direction: row-reverse;
 	}
   }

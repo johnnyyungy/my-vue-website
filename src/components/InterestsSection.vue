@@ -16,12 +16,12 @@
             <img :src="slide.image" style="width:100%" :alt="slide.alt">
             <div class="text">{{ slide.caption }}</div>
           </div>
-          <a class="prev" @click="prevSlide">&#10094;</a>
-          <a class="next" @click="nextSlide">&#10095;</a>
+          <a class="prev" @click="prevSlide(); restartAutoplay()">&#10094;</a>
+          <a class="next" @click="nextSlide(); restartAutoplay()">&#10095;</a>
         </div>
         <br>
         <div style="text-align:center">
-          <span class="dot" v-for="(slide, index) in slides" :key="index" :class="{ active: currentSlide === index }" @click="setSlide(index)"></span>
+          <span class="dot" v-for="(slide, index) in slides" :key="index" :class="{ active: currentSlide === index }" @click="setSlide(index); restartAutoplay()"></span>
         </div>
       </div>
     </div>
@@ -34,6 +34,7 @@ export default {
   data() {
     return {
       currentSlide: 0,
+      autoplayTimer: null,
       slides: [
         { 
           image: require('@/assets/images/muay_thai.jpg'), 
@@ -53,6 +54,12 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.startAutoplay();
+  },
+  beforeUnmount() {
+    clearInterval(this.autoplayTimer);
+  },
   methods: {
     nextSlide() {
       this.currentSlide = (this.currentSlide + 1) % this.slides.length;
@@ -62,6 +69,15 @@ export default {
     },
     setSlide(index) {
       this.currentSlide = index;
+    },
+    startAutoplay() {
+      this.autoplayTimer = setInterval(this.nextSlide, 4500);
+    },
+    // Manual navigation restarts the autoplay clock so it doesn't jump to
+    // the next slide moments after someone deliberately picked this one.
+    restartAutoplay() {
+      clearInterval(this.autoplayTimer);
+      this.startAutoplay();
     },
   },
 };

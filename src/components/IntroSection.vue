@@ -3,6 +3,7 @@
     <div class="wrapper">
       <aside>
         <h1>Hi, I'm John, <br>a UI Developer.</h1>
+        <a class="email" href="mailto:johnnyyungy@gmail.com">Get in touch</a>
         <div class="intro-social">
           <a href="http://www.instagram.com/johnnyyungy" target="_blank">Instagram</a> /
           <a href="https://twitter.com/johnnyyungy" target="_blank">Twitter</a> /

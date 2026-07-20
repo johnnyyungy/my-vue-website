@@ -1,28 +1,89 @@
 <template>
-  <!-- Reuses the workexperience styles so it matches the section above it. -->
-  <section class="workexperience" id="projects">
+  <section id="projects">
     <div class="wrapper">
-      <h2>Projects</h2>
-      <aside>
-        <h3>Chi - Health &amp; Fitness App for iPhone + Apple Watch</h3>
-        <h4>2026 to present</h4>
-        <p>A Whoop-style wellness app designed and built solo in Swift and SwiftUI. Chi computes daily Strain, Recovery and Sleep scores entirely on-device from Apple Watch data (heart rate, heart-rate variability, resting heart rate, respiratory rate and sleep stages, read via HealthKit), scored against personalised trailing baselines rather than population norms. The paired watchOS companion app mirrors the iPhone's scores over WatchConnectivity, with a WidgetKit watch-face complication and HealthKit background delivery keeping everything current. The scoring models are calibrated against published references: the sleep model tracks Apple's own Sleep Score to within a couple of points, and the training-strain model is validated against the Banister TRIMP training-load model from sports-science literature. Privacy-first by design: all health data stays on the device.</p>
-      </aside>
-      <aside>
-        <h3>Step Pet - Walking Game for Apple Watch</h3>
-        <h4>Personal project</h4>
-        <p>A watch-only app that gamifies daily walking: your steps feed a virtual pet on your wrist. Built in Swift for watchOS with a WidgetKit complication so the pet lives on the watch face.</p>
-      </aside>
-      <aside>
-        <h3>Collectors Catalog - iOS</h3>
-        <h4>Personal project</h4>
-        <p>An iOS app for cataloguing and browsing a collection, taken through the full App Store release process to Ready for Distribution on App Store Connect.</p>
-      </aside>
-      <aside>
-        <h3>Todaloo - iOS</h3>
-        <h4>Personal project</h4>
-        <p>A location app for finding nearby public toilets, plotting facilities around you on a map when you need one most.</p>
-      </aside>
+      <div class="section-head">
+        <h2>Built from curiosity, not a brief.</h2>
+        <p>Four personal apps, each one either solving a problem I actually had or chasing something I was curious about, from HealthKit scoring models through to App Store Connect.</p>
+      </div>
+
+      <article class="case">
+        <div class="case-copy">
+          <h3><span class="mark">氣</span> Chi</h3>
+          <p class="meta">2026 &mdash; present &middot; Swift, SwiftUI, HealthKit, watchOS, WidgetKit</p>
+          <p>A Whoop-style wellness app that computes Strain, Recovery and Sleep entirely on-device from Apple Watch data, scored against personalised trailing baselines rather than population norms. The watchOS companion mirrors the iPhone's scores live, with a watch-face complication for an at-a-glance read. The scoring is calibration-checked against outside references: the sleep model tracks Apple's own Sleep Score within a couple of points, and Strain is validated against the Banister TRIMP model from sports-science literature.</p>
+          <div class="vitals">
+            <div>
+              <span class="vital-value">10.9</span>
+              <span class="vital-name">Strain</span>
+            </div>
+            <div>
+              <span class="vital-value">86%</span>
+              <span class="vital-name">Recovery</span>
+            </div>
+            <div>
+              <span class="vital-value">88%</span>
+              <span class="vital-name">Sleep</span>
+            </div>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-phone">
+            <div class="screen"><div class="notch"></div><img src="@/assets/images/projects/chi/dashboard.jpg" alt="Chi's main dashboard, showing Strain, Recovery and Sleep scores for the day"></div>
+          </div>
+          <div class="device-watch paired">
+            <div class="screen"><img src="@/assets/images/projects/chi/watch-face.jpg" alt="Chi's watch-face complication showing live heart rate"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reverse">
+        <div class="case-copy">
+          <h3>Collectors Catalogue</h3>
+          <p class="meta">Personal project &middot; SwiftData, CloudKit</p>
+          <p>Catalogue and browse a collection with barcode scanning and photos. Taken through the full release process to Ready for Distribution on App Store Connect.</p>
+          <div class="case-tags">
+            <span class="tag">SwiftData</span>
+            <span class="tag">CloudKit</span>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-phone">
+            <div class="screen"><div class="notch"></div><img src="@/assets/images/projects/collectors-catalog/list.jpg" alt="Collectors Catalogue's item list, grouped by category"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-copy">
+          <h3>Todaloo</h3>
+          <p class="meta">Personal project &middot; MapKit, Supabase</p>
+          <p>Finds nearby public toilets and plots them on a map when you need one most, backed by a live dataset of real facilities.</p>
+          <div class="case-tags">
+            <span class="tag">MapKit</span>
+            <span class="tag">Supabase</span>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-phone">
+            <div class="screen"><div class="notch"></div><img src="@/assets/images/projects/todaloo/map.jpg" alt="Todaloo's map, showing nearby public restrooms in central London"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reverse">
+        <div class="case-copy">
+          <h3>Step Pet</h3>
+          <p class="meta">Personal project &middot; watchOS, WidgetKit</p>
+          <p>A watch-only app that gamifies daily walking: your steps feed a virtual pet living right on your wrist, with its own WidgetKit complication.</p>
+          <div class="case-tags">
+            <span class="tag">watchOS</span>
+            <span class="tag">WidgetKit</span>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-watch"><div class="screen"><img src="@/assets/images/projects/steppet/walk.jpg" alt="Step Pet's Walk to Earn Cheese screen on Apple Watch"></div></div>
+        </div>
+      </article>
     </div>
   </section>
 </template>
