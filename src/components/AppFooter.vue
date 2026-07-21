@@ -17,7 +17,7 @@
         <img src="@/assets/images/linkedin.png" width="35" height="35" alt="LinkedIn">
       </a>
     </div>
-    <div class="copyright">All work © John Yung 2019 - 2025 - All Rights Reserved</div>
+    <div class="copyright">All work © John Yung 2019 - 2026 - All Rights Reserved</div>
   </footer>
 </template>
 
