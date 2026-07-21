@@ -2,7 +2,7 @@
   <section id="projects">
     <div class="wrapper">
       <div class="section-head">
-        <h2>Built from curiosity, not a brief.</h2>
+        <h2>Built from curiosity and passion.</h2>
         <p>Four personal apps, each one either solving a problem I actually had or chasing something I was curious about, from HealthKit scoring models through to App Store Connect.</p>
       </div>
 
