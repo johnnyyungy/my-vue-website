@@ -5,7 +5,7 @@
       <aside>
         <h3>UI Developer - bet365</h3>
         <h4>September 2025 to present</h4>
-        <p>Developing production user interfaces across web, iOS and Android. Heavily involved in the launch of the native Follow Scores app on both iOS and Android, building UI features and carrying them through to release. Translating design specifications into responsive, accessible front-end code and collaborating with designers, analysts and fellow developers to ship new product features while maintaining brand consistency and code quality across platforms.</p>
+        <p>Developing production user interfaces across web, iOS and Android, building native UI features and carrying them through to release. Translating design specifications into responsive, accessible front-end code and collaborating with designers, analysts and fellow developers to ship new product features while maintaining brand consistency and code quality across platforms.</p>
       </aside>
       <aside>
         <h3>UI/UX Analyst - bet365</h3>

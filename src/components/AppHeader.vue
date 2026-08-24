@@ -20,12 +20,12 @@
       </button>
     </div>
     <nav :class="{ showNav: isNavVisible }" id="myToggle">
-      <a href="#home">Home</a>
-      <a href="#aboutme">My Background</a>
-      <a href="#work">Work Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#interests">Outside Interests</a>
+      <a href="#home" :class="{ active: activeSection === 'home' }">Home</a>
+      <a href="#aboutme" :class="{ active: activeSection === 'aboutme' }">My Background</a>
+      <a href="#work" :class="{ active: activeSection === 'work' }">Work Experience</a>
+      <a href="#projects" :class="{ active: activeSection === 'projects' }">Projects</a>
+      <a href="#education" :class="{ active: activeSection === 'education' }">Education</a>
+      <a href="#interests" :class="{ active: activeSection === 'interests' }">Outside Interests</a>
     </nav>
   </header>
 </template>
@@ -36,11 +36,45 @@ export default {
   data() {
     return {
       isNavVisible: false,
+      activeSection: 'home',
     };
+  },
+  mounted() {
+    this.sections = Array.from(document.querySelectorAll('section[id]'));
+    this.updateActiveSection();
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.scrollTicking) {
+      cancelAnimationFrame(this.scrollTicking);
+    }
   },
   methods: {
     toggleNav() {
       this.isNavVisible = !this.isNavVisible;
+    },
+    onScroll() {
+      if (this.scrollTicking) return;
+      this.scrollTicking = requestAnimationFrame(() => {
+        this.updateActiveSection();
+        this.scrollTicking = null;
+      });
+    },
+    updateActiveSection() {
+      // The section whose top has most recently passed just below the
+      // fixed nav is "current" - falls back to the first section (home)
+      // when nothing has scrolled past that line yet.
+      const navOffset = 80;
+      let current = this.sections[0];
+      for (const section of this.sections) {
+        if (section.getBoundingClientRect().top <= navOffset) {
+          current = section;
+        }
+      }
+      if (current) {
+        this.activeSection = current.id;
+      }
     },
   },
 };
