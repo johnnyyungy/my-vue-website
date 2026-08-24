@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="section-head">
         <h2>Built from curiosity and passion.</h2>
-        <p>Four personal apps, each one either solving a problem I actually had or chasing something I was curious about, from HealthKit scoring models through to App Store Connect.</p>
+        <p>Six personal projects, each one either solving a problem I actually had or chasing something I was curious about, from HealthKit scoring models through to a couple of hand-coded blogs.</p>
       </div>
 
       <article class="case">
@@ -75,6 +75,44 @@
         </div>
         <div class="case-shot">
           <div class="device-watch"><div class="screen"><img src="@/assets/images/projects/steppet/walk.jpg" alt="Step Pet's Walk to Earn Cheese screen on Apple Watch"></div></div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-copy">
+          <h3>Yung Bros</h3>
+          <p class="meta"><a href="https://yungbros.com" target="_blank" rel="noopener">yungbros.com</a></p>
+          <p>A hand-coded travel and food blog, built from scratch with vanilla HTML, CSS and JavaScript rather than a site builder, with a custom post and category layout for trip write-ups from Japan and beyond.</p>
+          <div class="case-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="screen"><img src="@/assets/images/projects/yungbros/homepage.jpg" alt="Yung Bros homepage, featuring a travel story about Kinkaku-ji in Kyoto, Japan"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reverse">
+        <div class="case-copy">
+          <h3>Train Smart Not Hard</h3>
+          <p class="meta"><a href="https://trainsmartnothard.com" target="_blank" rel="noopener">trainsmartnothard.com</a> &mdash; running over a decade</p>
+          <p>A science-backed fitness and nutrition blog I've written and coded myself for over ten years, rebuilt as a hand-coded static site with a dark, editorial design across training guides, nutrition breakdowns and beginner programmes.</p>
+          <div class="case-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="case-shot">
+          <div class="device-browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="screen"><img src="@/assets/images/projects/trainsmartnothard/homepage.jpg" alt="Train Smart Not Hard homepage, showing the 'Train Smart Not Hard' hero headline"></div>
+          </div>
         </div>
       </article>
     </div>
