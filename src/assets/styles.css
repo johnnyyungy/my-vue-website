@@ -248,7 +248,7 @@
 
   #projects .section-head {
 	max-width: 620px;
-	margin-bottom: 48px;
+	margin-bottom: 0px;
   }
 
   #projects .section-head p {
@@ -678,6 +678,10 @@
 	}
 
 	/* Projects Section: alternating side-by-side case-study rows. */
+	#projects .section-head {
+	  margin-bottom: 48px;
+	}
+
 	.case {
 	  flex-direction: row;
 	  align-items: center;
